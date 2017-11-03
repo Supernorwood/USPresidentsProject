@@ -1,0 +1,4 @@
+1	George Washington		1789-1797	Independent	Allergic to apples
+2	John Adams	1797-1801	Federalist	Hated being called Jonny
+3	Thomas Jefferson	1801-1809	Democratic-Republican	Had a cat named Dee-O-gee
+
