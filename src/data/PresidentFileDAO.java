@@ -9,8 +9,10 @@ public class PresidentFileDAO implements PresidentDAO {
 	private ServletContext servletContext;
 	private ArrayList<President> presidents;
 	
-	public PresidentFileDAO(){
-		
+	public PresidentFileDAO(ServletContext context){
+		servletContext = context;
+		presidents = new ArrayList<>();
+		//loadPresidentsFromFile();
 	}
 	
 	
