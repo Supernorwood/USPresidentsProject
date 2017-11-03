@@ -27,26 +27,27 @@ public class PresidentFileDAO implements PresidentDAO {
 
 	@Override
 	public String getPartyByTerm(int termNumber) {
-		
-		return null;
+		return getPresidentByTerm(termNumber).getParty();
 	}
 
 	@Override
 	public String getFactByTerm(int termNumber) {
-		
-		return null;
+		return getPresidentByTerm(termNumber).getInterestingFact();
 	}
 
 	@Override
 	public String getDateInOfficeByTerm(int termNumber) {
-		
-		return null;
+		return getPresidentByTerm(termNumber).getDatesInOffice();
 	}
 
 	@Override
-	public String getTermNumberByName(String name) {
-		
-		return null;
+	public int getTermNumberByName(String name) {
+		for(President p : presidents) {
+			if(p.getName().equals(name)) {
+				return presidents.indexOf(p);
+			}
+		}
+		return -1;
 	}
 
 }

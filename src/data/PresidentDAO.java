@@ -10,5 +10,5 @@ public interface PresidentDAO {
 	String getPartyByTerm(int termNumber);
 	String getFactByTerm(int termNumber);
 	String getDateInOfficeByTerm(int termNumber);
-	String getTermNumberByName(String name);
+	int getTermNumberByName(String name);
 }
