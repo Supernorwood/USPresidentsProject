@@ -1,32 +1,53 @@
 package web;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class PresidentServlet
- */
-@WebServlet("/PresidentServlet")
+
+import data.President;
+import data.PresidentDAO;
+
+
+@WebServlet("//action from form jsp")
 public class PresidentServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	private PresidentDAO presidentDAO;
+	
+	@Override
+	public void init() throws ServletException {
+		presidentDAO = new PresidentFileDAO(getServletContext());
+	}
        
    
-    public PresidentServlet() {
-        super();
-    }
-
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+//    public PresidentServlet() {
+//        super();
+//    }
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		List<President> n = presidentDAO.getAllPresidents();
+		request.setAttribute("presidents", presidentDAO.getAllPresidents());
+		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
+		
+		int termNumber = request.getParameter(1);
+		President president = presidentDAO.getPresidentByTerm(1);
+		if(president != null) {
+			request.setAttribute("president", president);
+			request.getRequestDispatcher("/presidnetWeb.jsp");
+		}
+	}
+	
+	
+
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
 	}
 
 }
