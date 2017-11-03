@@ -1,4 +1,4 @@
 # US Presidents Web App
 
 ## GIT MONEY
-###Authors: Jacob Simms, 
+###Authors: Jacob Simms, Gregory Norwood
