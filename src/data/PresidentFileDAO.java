@@ -5,9 +5,14 @@ import java.util.ArrayList;
 import javax.servlet.ServletContext;
 
 public class PresidentFileDAO implements PresidentDAO {
-	private static final String filename = "WEB-INF/stocks.txt";
+	private static final String filename = "WEB-INF/presidentList.txt";
 	private ServletContext servletContext;
 	private ArrayList<President> presidents;
+	
+	public PresidentFileDAO(){
+		
+	}
+	
 	
 	
 	@Override
@@ -42,6 +47,7 @@ public class PresidentFileDAO implements PresidentDAO {
 
 	@Override
 	public int getTermNumberByName(String name) {
+		//returns -1 if name is not present in arrayList
 		for(President p : presidents) {
 			if(p.getName().equals(name)) {
 				return presidents.indexOf(p);
