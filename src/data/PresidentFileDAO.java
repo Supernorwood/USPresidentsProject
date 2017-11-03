@@ -20,4 +20,34 @@ public class PresidentFileDAO implements PresidentDAO {
 		return presidents.get(termNumber-1);
 	}
 
+	@Override
+	public President getNameByTerm(int termNumber) {
+		
+		return null;
+	}
+
+	@Override
+	public President getPartyByTerm(int termNumber) {
+		
+		return null;
+	}
+
+	@Override
+	public President getFactByTerm(int termNumber) {
+		
+		return null;
+	}
+
+	@Override
+	public President getDateInOfficeByTerm(int termNumber) {
+		
+		return null;
+	}
+
+	@Override
+	public President getTermNumberByName(String name) {
+		
+		return null;
+	}
+
 }
