@@ -1,4 +1,4 @@
-package web;
+package data;
 
 public class President {
 
