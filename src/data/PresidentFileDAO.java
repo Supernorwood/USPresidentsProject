@@ -1,8 +1,12 @@
 package data;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import javax.servlet.ServletContext;
+
 
 public class PresidentFileDAO implements PresidentDAO {
 	private static final String filename = "WEB-INF/presidentList.txt";
@@ -12,9 +16,28 @@ public class PresidentFileDAO implements PresidentDAO {
 	public PresidentFileDAO(ServletContext context){
 		servletContext = context;
 		presidents = new ArrayList<>();
-		//loadPresidentsFromFile();
+		loadPresidentsFromFile();
 	}
 	
+	
+	private void loadPresidentsFromFile() {
+		InputStream is = servletContext.getResourceAsStream(filename);
+		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
+			String line;
+			while ((line = buf.readLine()) != null) {
+				String[] tokens = line.split("\t");
+				int termNumber = Integer.parseInt(tokens[0]);
+				String name = tokens[1];
+				String datesInOffice = tokens[2];
+				String party = tokens[3];
+				String fact = tokens[4];
+				
+				presidents.add(new President(name, termNumber, party, fact, datesInOffice));
+			}
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+	}
 	
 	
 	@Override
