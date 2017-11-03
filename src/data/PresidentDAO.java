@@ -1,5 +1,9 @@
 package data;
 
-public interface PresidentDAO {
+import java.util.ArrayList;
 
+public interface PresidentDAO {
+	ArrayList<President> getAllPresidents();
+	
+	President getPresidentByTerm(int termNumber);
 }
