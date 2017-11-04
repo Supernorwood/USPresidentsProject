@@ -30,10 +30,12 @@ public class PresidentServlet extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		List<President> n = presidentDAO.getAllPresidents();
-//		request.setAttribute("presidents", presidentDAO.getAllPresidents());
-//		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
-
+		List<President> n = presidentDAO.getAllPresidents();
+		request.setAttribute("presidents", presidentDAO.getAllPresidents());
+		request.setAttribute("president",new President("man", 2, "timmyParty", "Loves pickels", "1123231"));
+		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
+	
+		
 		int termNumber = 1;
 		try{
 			termNumber = Integer.parseInt(request.getParameter("termNumber"));
@@ -45,8 +47,10 @@ public class PresidentServlet extends HttpServlet {
 		if(president != null) {
 			request.setAttribute("president", president);
 			request.getRequestDispatcher("/presidnetWeb.jsp").forward(request, response);
+		} else {
+			request.setAttribute("president",new President("man", 2, "timmyParty", "Loves pickels", "1123231"));
 		}
-	}
+	} 
 	
 	
 

@@ -9,12 +9,12 @@
 <body>
 
 <form action="TermNumber" method="POST">
-		<input type="month" name="termNumber" /><br>
+		<input type="number" name="termNumber" /><br>
 		<input type="submit" value="Submit" />
 </form>
 
 
-<h4>${president}</h4>	
+<h4>${president.name}</h4>	
 
 
 </body>
