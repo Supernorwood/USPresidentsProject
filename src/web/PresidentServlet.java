@@ -32,15 +32,15 @@ public class PresidentServlet extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		List<President> n = presidentDAO.getAllPresidents();
-		request.setAttribute("presidents", presidentDAO.getAllPresidents());
-		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
+//		List<President> n = presidentDAO.getAllPresidents();
+//		request.setAttribute("presidents", presidentDAO.getAllPresidents());
+//		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		
 		int termNumber = Integer.parseInt(request.getParameter("termNumber"));
 		President president = presidentDAO.getPresidentByTerm(termNumber);
 		if(president != null) {
 			request.setAttribute("president", president);
-			request.getRequestDispatcher("/presidnetWeb.jsp");
+			request.getRequestDispatcher("/presidnetWeb.jsp").forward(request, response);
 		}
 	}
 	

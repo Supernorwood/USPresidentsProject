@@ -13,5 +13,22 @@
 		<input type="submit" value="Submit" />
 	</form>
 
+
+<h4>${president}</h4>	
+<table>
+
+<%-- <tr>
+	<th>symbol</th>
+	<th>name</th>
+	<th>price</th>
+ 
+</tr>
+	<tr>
+		<td>${stock.symbol}</td>
+		<td>${stock.name}</td>
+		<td>${stock.price}</td>
+	</tr>
+</table> --%>
+
 </body>
 </html>
