@@ -1,7 +1,6 @@
 package web;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -10,12 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 import data.President;
 import data.PresidentDAO;
+import data.PresidentFileDAO;
 
 
-@WebServlet("//action from form jsp")
+@WebServlet("/TermNumber")
 public class PresidentServlet extends HttpServlet {
 	private PresidentDAO presidentDAO;
 	
@@ -35,7 +34,7 @@ public class PresidentServlet extends HttpServlet {
 		request.setAttribute("presidents", presidentDAO.getAllPresidents());
 		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		
-		int termNumber = request.getParameter(1);
+		int termNumber = request.getParameter(number);
 		President president = presidentDAO.getPresidentByTerm(1);
 		if(president != null) {
 			request.setAttribute("president", president);
