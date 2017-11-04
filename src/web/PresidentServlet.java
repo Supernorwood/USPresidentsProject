@@ -34,8 +34,13 @@ public class PresidentServlet extends HttpServlet {
 //		request.setAttribute("presidents", presidentDAO.getAllPresidents());
 //		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 
+		int termNumber = 1;
+		try{
+			termNumber = Integer.parseInt(request.getParameter("termNumber"));
+		} catch(Exception e) {
+			termNumber = 1;
+		}
 		
-		int termNumber = Integer.parseInt(request.getParameter("termNumber"));
 		President president = presidentDAO.getPresidentByTerm(termNumber);
 		if(president != null) {
 			request.setAttribute("president", president);
