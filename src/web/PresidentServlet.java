@@ -13,9 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import data.President;
 import data.PresidentDAO;
+import data.PresidentFileDAO;
 
 
-@WebServlet("//action from form jsp")
+@WebServlet("/TermNumber")
 public class PresidentServlet extends HttpServlet {
 	private PresidentDAO presidentDAO;
 	
@@ -35,8 +36,8 @@ public class PresidentServlet extends HttpServlet {
 		request.setAttribute("presidents", presidentDAO.getAllPresidents());
 		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		
-		int termNumber = request.getParameter(1);
-		President president = presidentDAO.getPresidentByTerm(1);
+		int termNumber = Integer.parseInt(request.getParameter("termNumber"));
+		President president = presidentDAO.getPresidentByTerm(termNumber);
 		if(president != null) {
 			request.setAttribute("president", president);
 			request.getRequestDispatcher("/presidnetWeb.jsp");

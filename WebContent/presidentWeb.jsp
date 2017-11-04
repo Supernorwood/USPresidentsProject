@@ -9,9 +9,7 @@
 <body>
 
 <form action="TermNumber" method="POST">
-		
-			<input type="number" name="termNumber" /><br>
-	
+		<input type="number" name="termNumber" /><br>
 		<input type="submit" value="Submit" />
 	</form>
 
