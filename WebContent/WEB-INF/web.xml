@@ -6,7 +6,7 @@
   </welcome-file-list>
   <servlet>
     <servlet-name>PresidentServlet</servlet-name>
-    <servlet-class>data.PresientServlet</servlet-class>
+    <servlet-class>web.PresidentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>PresidentServlet</servlet-name>
