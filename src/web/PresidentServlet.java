@@ -22,19 +22,17 @@ public class PresidentServlet extends HttpServlet {
 	public void init() throws ServletException {
 		presidentDAO = new PresidentFileDAO(getServletContext());
 	}
-       
-   
-//    public PresidentServlet() {
-//        super();
-//    }
-
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		List<President> n = presidentDAO.getAllPresidents();
+	@Override 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setAttribute("presidents", presidentDAO.getAllPresidents());
 		request.setAttribute("president",new President("man", 2, "timmyParty", "Loves pickels", "1123231"));
 		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
+		
+	} 
 	
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
 		
 		int termNumber = 1;
 		try{
@@ -45,18 +43,11 @@ public class PresidentServlet extends HttpServlet {
 		
 		President president = presidentDAO.getPresidentByTerm(termNumber);
 		if(president != null) {
-			request.setAttribute("president", president);
-			request.getRequestDispatcher("/presidnetWeb.jsp").forward(request, response);
+			request.setAttribute("presidents", president);
+			request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		} else {
-			request.setAttribute("president",new President("man", 2, "timmyParty", "Loves pickels", "1123231"));
+			request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		}
-	} 
-	
-	
-
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request, response);
 	}
 
 }

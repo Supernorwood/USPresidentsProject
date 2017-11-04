@@ -47,13 +47,25 @@ public class PresidentFileDAO implements PresidentDAO {
 
 	@Override
 	public President getPresidentByTerm(int termNumber) {
-		try {
-			return presidents.get(termNumber-1);
-		}
-		catch(Exception e){
-			return null;
-		}
+		President p = null;
+			for (President president : presidents) {
+				if (president.getTermNumber() == (termNumber)) {
+					p = president;
+					break;
+				}
+			}
+		return p;
 	}
+		
+		
+		
+//		try {
+//			return presidents.get(termNumber-1);
+//		}
+//		catch(Exception e){
+//			return null;
+//		}
+	
 
 	@Override
 	public String getNameByTerm(int termNumber) {
