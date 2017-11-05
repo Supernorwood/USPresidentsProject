@@ -6,14 +6,16 @@ public class President {
 	private String party;
 	private String interestingFact;
 	private String datesInOffice;
+	private String imageFile;
 	
-	public President(String name, int termNumber, String party, String interestingFact, String datesInOffice) {
+	public President(String name, int termNumber, String party, String interestingFact, String datesInOffice, String imageFile) {
 		super();
 		this.name = name;
 		this.termNumber = termNumber;
 		this.party = party;
 		this.interestingFact = interestingFact;
 		this.datesInOffice = datesInOffice;
+		this.imageFile = imageFile;
 	}
 	
 	public String getName() {

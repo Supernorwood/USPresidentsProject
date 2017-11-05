@@ -23,14 +23,16 @@ public class PresidentFileDAO implements PresidentDAO {
 		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
 			String line;
 			while ((line = buf.readLine()) != null) {
-				String[] tokens = line.split("\t");
+				String[] tokens = line.split(",");
 				int termNumber = Integer.parseInt(tokens[0]);
 				String name = tokens[1];
 				String datesInOffice = tokens[2];
 				String party = tokens[3];
 				String fact = tokens[4];
+				String link = tokens[5];
+				String imagePath = "img/" + link;
 				
-				presidents.add(new President(name, termNumber, party, fact, datesInOffice));
+				presidents.add(new President(name, termNumber, party, fact, datesInOffice, imagePath));
 			}
 		} catch (Exception e) {
 			System.err.println(e);
