@@ -15,37 +15,56 @@
 	    <title>President</title>
 	</head>
 	<body>
-	
-	
-	
-		<h2>Welcome to President Info</h2>
-		
-		<form action="select.do" method="POST">
-					<input type="text" name="termNumber" /><br>
-					<input type="submit" value="Submit" />
+		<div class="container">
+			<div class="row">
+				<div class="col-5"> 
+					<h2>Welcome to President Info</h2>
 					
-		</form>
-		
-		${name}  ${party} ${term} ${fact}
-		
-			
-		<table border="0">
-			<tr>
-				<th>Term Number</th>
-				<th>President Name</th>
-		
-			</tr>
-			<tr>
-				<td>${presidents.termNumber}</td>
-				<td>${presidents.name}</td>
-				
-				
-			</tr>
-		</table>
-			
-			
-			
-			
-	
+					<form action="select.do" method="POST">
+								<input type="text" name="termNumber" /><br>
+								<input type="submit" value="Submit" />
+								
+					</form>
+				</div>
+				<div class="col-7">
+					<c:choose>
+						<c:when test="${name != null}">
+							<ul>
+								<li>Name: ${name}</li>
+								<li>Party: ${party}</li>
+								<li>Term: ${term}</li>
+								<li>Dates: ${dates}</li>
+								<li>Fact: ${fact}</li>
+								
+							
+							</ul>
+						
+						</c:when>
+					
+					
+					
+					
+					</c:choose>
+					${name}  ${party} ${term} ${fact}
+					
+						
+					<table border="0">
+						<tr>
+							<th>Term Number</th>
+							<th>President Name</th>
+					
+						</tr>
+						<tr>
+							<td>${presidents.termNumber}</td>
+							<td>${presidents.name}</td>
+							
+							
+						</tr>
+					</table>
+						
+						
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

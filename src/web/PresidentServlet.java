@@ -37,11 +37,9 @@ public class PresidentServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//doGet(request, response);
 		
-		System.out.println(request.getParameter("termNumber"));
 		int termNumber = 1;
 		try{
 			termNumber = Integer.parseInt(request.getParameter("termNumber"));
-			System.out.println("boom");
 		} catch(Exception e) {
 			termNumber = 1;
 		}
