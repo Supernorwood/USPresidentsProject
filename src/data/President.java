@@ -1,6 +1,7 @@
 package data;
 
 public class President {
+	
 	private String name;
 	private int termNumber;
 	private String party;
@@ -47,6 +48,13 @@ public class President {
 	}
 	public void setDatesInOffice(String datesInOffice) {
 		this.datesInOffice = datesInOffice;
+	}
+	public String getImageFile() {
+		return imageFile;
+	}
+
+	public void setImageFile(String imageFile) {
+		this.imageFile = imageFile;
 	}
 	
 }
