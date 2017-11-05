@@ -37,6 +37,9 @@
 								<li>Dates: ${president.datesInOffice}</li>
 								<li>Fact: ${president.interestingFact}</li>
 							</ul>
+							
+						
+						
 							<form action="select.do" method="POST">
 								<table> <!-- logic to display buttons and disable invalid options -->
 									<c:choose>
@@ -58,7 +61,9 @@
 									</c:choose>
 								
 								</table>
-							</form>							
+							</form>
+					
+														
 						</c:when>
 						<c:otherwise>
 							Please select a president.
