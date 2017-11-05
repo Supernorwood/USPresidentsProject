@@ -29,7 +29,7 @@ public class PresidentFileDAO implements PresidentDAO {
 				String datesInOffice = tokens[2];
 				String party = tokens[3];
 				String fact = tokens[4];
- 				
+				
 				presidents.add(new President(name, termNumber, datesInOffice, party, fact));
 			}
 		} catch (Exception e) {

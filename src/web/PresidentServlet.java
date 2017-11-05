@@ -47,6 +47,7 @@ public class PresidentServlet extends HttpServlet {
 		}
 		
 		President president = presidentDAO.getPresidentByTerm(termNumber);
+		
 		if(president != null) {
 			request.setAttribute("president", president);
 			request.setAttribute("name", president.getName());
