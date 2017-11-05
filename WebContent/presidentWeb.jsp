@@ -30,7 +30,7 @@
 					<c:choose>
 						<c:when test="${president.name != null}">
 							<ul>
-								<li><img src="#">Placeholder for images</li>
+								<li><img src="${president.imageFile}"></li>
 								<li>Name: ${president.name}</li>
 								<li>Party: ${president.party}</li>
 								<li>Term: ${president.termNumber}</li>
