@@ -31,13 +31,11 @@ public class PresidentServlet extends HttpServlet {
 		if (filter != null) {
 			filteredList = presidentDAO.getPresidentsByParty(filter);
 			request.setAttribute("filteredList", filteredList);
-			request.getRequestDispatcher("/listPresidents.jsp").forward(request, response);
+			request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		}
 		else {
 			request.getRequestDispatcher("/error.jsp").forward(request, response);
 		}
-		
-		
 	} 
 	
 	@Override
