@@ -2,6 +2,39 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<<<<<<< HEAD
+	<head>
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	    <!-- my css -->
+	    <link rel="stylesheet" href="css/styles.css">		
+	    <title>President</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+			
+			
+			<c:if test="${empty president.termNumber}">
+				<div class="col-5"> 
+					<h2>Welcome to President Info</h2>
+					
+					
+					<form action="select.do" method="POST">
+								<input type="text" name="termNumber" /><br>
+								<input type="submit" value="Submit" />
+								
+					</form>
+					
+					
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+<!--   <ol class="carousel-indicators">
+=======
 <head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -28,6 +61,7 @@
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<!--   <ol class="carousel-indicators">
+>>>>>>> c78ca7605e2e135595f2ef4bc0f9fe630da7589a
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -106,13 +140,22 @@
 
 
 
-			</div>
-			<div class="col">
-				<c:choose>
-					<c:when test="${president.name != null}">
-						 <ul> 
-						<%-- 	<li><img src="${president.imageFile}"></li> --%>
+
+				</div>
+				</c:if>
+				
+				<div class="col-7">
+					<c:choose>
+						<c:when test="${president.name != null}">
+							<!-- <ul> -->
+							<%-- 	<li><img src="${president.imageFile}"></li> --%>
+					<%-- 			<li>Name: ${president.name}</li>
+
+
 									<li>Name: ${president.name}</li>
+
+>>>>>>> c78ca7605e2e135595f2ef4bc0f9fe630da7589a
+>>>>>>> 7c5a9a2b327f296ba8487d58ded907dc76f3248b
 								<li>Party: ${president.party}</li>
 								<li>Term: ${president.termNumber}</li>
 								<li>Dates: ${president.datesInOffice}</li>
