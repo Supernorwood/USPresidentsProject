@@ -9,12 +9,12 @@ Created a Web Application that allows users to select and view information about
 Each President's page displays a picture of the president, along with the president's name, dates in office, political party, and one (completely fabricated) interesting fact. The pictures are......from WebContent.  The information about the presidents is read in from a .txt file stored in WEB-INF. 
 
 ### Programming Languages Used
-- Java
-- HTML
-- CSS
-- JSP
--- EL
--- JSTL 
+* Java
+* HTML
+* CSS
+* JSP
+	* EL
+	* JSTL 
 
 ### Technologies and concepts implemented
 - Amazon Web Services (AMS)
@@ -29,7 +29,7 @@ Each President's page displays a picture of the president, along with the presid
 - Bootstrap
 
 ### The Struggles were Real
-Though most of the functionality code was framed out and written before we left Friday evening, we didn't get it working until Saturday night. We had to fix spacing/tab errors in the .txt file, place everything into a doPost method, change the setAttributes to call each variable (name, term, fact, etc) individually versus use a getAllPresidents. Additionally, one of our teammates was unable to post updates to gitHub for much of the weekend. But in the end, we GOT (GITTED?) MONEY. ;)
+Though most of the functionality code was framed out and written before we left Friday evening, we didn't get it working until Saturday night. We had to fix spacing/tab errors in the .txt file, place everything into a doPost method, change the setAttributes to call each variable (name, term, fact, etc) individually versus use a getAllPresidents. Additionally, one of our teammates was unable to post updates to gitHub for much of the weekend. But in the end, we GOT (GITTED?) MONEY. ;) :sunglasses:
 
 
 
