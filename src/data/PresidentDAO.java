@@ -1,9 +1,10 @@
 package data;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public interface PresidentDAO {
-	ArrayList<President> getAllPresidents();
+	List<President> getAllPresidents();
 	
 	President getPresidentByTerm(int termNumber);
 	String getNameByTerm(int termNumber);

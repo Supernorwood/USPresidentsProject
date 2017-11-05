@@ -15,7 +15,7 @@
 	<h2>Welcome to President Info</h2>
 		
 	<form action="select.do" method="POST">
-				<input type="number" name="${termNumber}" value="${president.termNumber}"/><br>
+				<input type="text" name="termNumber" /><br>
 				<input type="submit" value="Submit" />
 				
 	</form>
@@ -26,16 +26,12 @@
 		<tr>
 			<th>Term Number</th>
 			<th>President Name</th>
-			<th>Party</th>
-			<th>Dates in Office</th>
-			<th>Fun Fact</th>
+	
 		</tr>
 		<tr>
-			<td>${president.termNumber}</td>
-			<td>${president.name}</td>
-			<td>${president.party}</td>
-			<td>${president.datesInOffice}</td>
-			<td>${president.interestingFact}</td>
+			<td>${presidents.termNumber}</td>
+			<td>${presidents.name}</td>
+			
 			
 		</tr>
 	</table>
