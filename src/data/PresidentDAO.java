@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface PresidentDAO {
 	List<President> getAllPresidents();
-	
+	List<President> getPresidentsByParty(String partyFilter);
 	President getPresidentByTerm(int termNumber);
 	String getNameByTerm(int termNumber);
 	String getPartyByTerm(int termNumber);

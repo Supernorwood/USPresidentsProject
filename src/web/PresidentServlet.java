@@ -22,16 +22,23 @@ public class PresidentServlet extends HttpServlet {
 	public void init() throws ServletException {
 		presidentDAO = new PresidentFileDAO(getServletContext());
 	}
-	/*
+	
 	@Override 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//request.setAttribute("presidents", presidentDAO.getAllPresidents());
-		//request.setAttribute("president",new President("man", 2, "timmyParty", "Loves pickels", "1123231"));
-		//request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
-		request.setAttribute("presidents", presidentDAO.getAllPresidents());
-		request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
-	
-	} */
+		String filter = request.getParameter("filter");
+		List<President> filteredList;
+		
+		if (filter != null) {
+			filteredList = presidentDAO.getPresidentsByParty(filter);
+			request.setAttribute("filteredList", filteredList);
+			request.getRequestDispatcher("/listPresidents.jsp").forward(request, response);
+		}
+		else {
+			request.getRequestDispatcher("/error.jsp").forward(request, response);
+		}
+		
+		
+	} 
 	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
