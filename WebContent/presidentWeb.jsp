@@ -17,8 +17,12 @@
 	<body>
 		<div class="container">
 			<div class="row">
+			
+			
+			<c:if test="${empty president.termNumber}">
 				<div class="col-5"> 
 					<h2>Welcome to President Info</h2>
+					
 					
 					<form action="select.do" method="POST">
 								<input type="text" name="termNumber" /><br>
@@ -26,6 +30,8 @@
 								
 					</form>
 				</div>
+				</c:if>
+				
 				<div class="col-7">
 					<c:choose>
 						<c:when test="${president.name != null}">
