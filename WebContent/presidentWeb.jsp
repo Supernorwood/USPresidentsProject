@@ -29,7 +29,7 @@
 				<div class="col-7">
 					<c:choose>
 						<c:when test="${president.name != null}">
-							<ul>
+							<ul class="infoList">
 								<li><img src="#">Placeholder for images</li>
 								<li>Name: ${president.name}</li>
 								<li>Party: ${president.party}</li>
