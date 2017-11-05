@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletContext;
 public class PresidentFileDAO implements PresidentDAO {
@@ -43,6 +44,18 @@ public class PresidentFileDAO implements PresidentDAO {
 	@Override
 	public ArrayList<President> getAllPresidents() {
 		return presidents;
+	}
+	
+	@Override
+	public List<President> getPresidentsByParty(String partyFilter) {
+		List<President> partyList = new ArrayList<>();
+		for (President p : presidents) {
+			if (p.getParty().equals(partyFilter)) {
+				partyList.add(p);
+			}
+		}
+		
+		return partyList;
 	}
 
 	@Override
