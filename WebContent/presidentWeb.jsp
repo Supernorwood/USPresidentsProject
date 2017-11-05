@@ -10,7 +10,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <!-- my css -->
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style.css">
 <title>President</title>
 </head>
 <body>
@@ -64,13 +64,13 @@
 						<c:choose>
 							<c:when test="${president.termNumber == 1}">
 								<!-- when at first president, disable previous button -->
-								<button type="submit" class="carousel-control-prev" name="termNumber" value="${president.termNumber - 1}" role="button" data-slide="prev" disabled>
+								<button type="submit" class="carousel-control-prev carouselOverride" name="termNumber" value="${president.termNumber - 1}" role="button" data-slide="prev" disabled>
 									<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Prev</span>
 								</button>
 							</c:when>
 							<c:otherwise>
 								<!-- otherwise enable it-->
-								<button type="submit" class="carousel-control-prev" name="termNumber" value="${president.termNumber - 1}" role="button" data-slide="prev">
+								<button type="submit" class="carousel-control-prev carouselOverride" name="termNumber" value="${president.termNumber - 1}" role="button" data-slide="prev">
 									<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Prev</span>
 								</button>
 							</c:otherwise>
@@ -78,13 +78,13 @@
 						<c:choose>
 							<c:when test="${president.termNumber == 45}">
 								<!-- when at last president, disable next button -->
-								<button type="submit" class="carousel-control-next" name="termNumber" value="${president.termNumber + 1}" role="button" data-slide="next" disabled>
+								<button type="submit" class="carousel-control-next carouselOverride" name="termNumber" value="${president.termNumber + 1}" role="button" data-slide="next" disabled>
 									<span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span>
 								</button>
 							</c:when>
 							<c:otherwise>
 								<!-- otherwise enable it-->
-								<button type="submit" class="carousel-control-next" name="termNumber" value="${president.termNumber + 1}" role="button" data-slide="next">
+								<button type="submit" class="carousel-control-next carouselOverride" name="termNumber" value="${president.termNumber + 1}" role="button" data-slide="next">
 									<span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span>
 								</button>
 							</c:otherwise>
