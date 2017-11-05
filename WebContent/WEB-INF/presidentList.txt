@@ -1,45 +1,45 @@
-1	George Washington	1789-1797	Independent	Allergic to apples
-2	John Adams	1797-1801	Federalist	Hated being called Jonny
-3	Thomas Jefferson	1801-1809	Democratic-Republican	Had a cat named Dee-O-gee
-4	James Madison	1809-1817	Democratic-Republican	q
-5	James Monroe		1817-1825	Democratic-Republican	q
-6	John Quincy Adams	1825-1829	Democratic-Republican	q
-7	Andrew Jackson	1829-1837	Democrat	q
-8	Martin Van Buren	1837-1841	Democrat	q
-9	William Henry Harrison	1841-1841	Whig	q
-10	John Tyler	1841-1845	Whig	q
-11	James Knox Polk	1845-1849	Democrat	q
-12	Zachary Taylor	1849-1850	Whig	q
-13	Millard Fillmore	1850-1853	Whig	q
-14	Franklin Pierce	1853-1857	Democrat	q
-15	James Buchanan	1857-1861	Democrat	q
-16	Abraham Lincoln	1861-1865	Republican	q
-17	Andrew Johnson	1865-1869	Democrat	q
-18	Ulysses Simpson Grant	1869-1877	Republican	q
-19	Rutherford Birchard Hayes	1877-1881	Republican	q
-20	James Abram Garfield	1881-1881	Republican	q
-21	Chester Alan Arthur	1881-1885	Republican	q
-22	Grover Cleveland	1885-1889	Democrat	q
-23	Benjamin Harrison	1889-1893	Republican	q
-24	Grover Cleveland	1893-1897	Democrat	q
-25	William McKinley	1897-1901	Republican	q
-26	Theodore Roosevelt	1901-1909	Republican	q
-27	William Howard Taft	1909-1913	Republican	q
-28	Woodrow Wilson	1913-1921	Democrat	q
-29	Warren Gamaliel Harding	1921-1923	Republican	q
-30	Calvin Coolidge	1923-1929	Republican	q
-31	Herbert Clark Hoover	1929-1933	Republican	q
-32	Franklin Delano Roosevelt	1933-1945	Democrat	q
-33	Harry S Truman	1945-1953	Democrat	q
-34	Dwight David Eisenhower	1953-1961	Republican	q
-35	John Fitzgerald Kennedy	1961-1963	Democrat	q
-36	Lyndon Baines Johnson	1963-1969	Democrat	q
-37	Richard Milhous Nixon	1969-1974	Republican	q
-38	Gerald Rudolph Ford	1974-1977	Republican	q
-39	James Earl Carter	1977-1981	Democrat	q
-40	Ronald Wilson Reagan	1981-1989	Republican	q
-41	George Herbert-Walker Bush	1989-1993	Republican	q
-42	William Jefferson Clinton	1993-2001	Democrat	q
-43	George Walker Bush	2001-2009	Republican	q
-44	Barack Hussein Obama	2009-2016	Democrat	q
-45	Donald Trump	2016-Present	Republican	Owns $23.8M in Bitcoin
+1,George Washington,1789-1797,Independent,Allergic to apples,imgsrc
+2,John Adams,1797-1801,Federalist,Hated being called Jonny,imgsrc
+3,Thomas Jefferson,1801-1809,Democratic-Republican,Had a cat named Dee-O-gee,imgsrc
+4,James Madison,1809-1817,Democratic-Republican,q,imgsrc
+5,James Monroe,1817-1825,Democratic-Republican,q,imgsrc
+6,John Quincy Adams,1825-1829,Democratic-Republican,q,imgsrc
+7,Andrew Jackson,1829-1837,Democrat,q,imgsrc
+8,Martin Van Buren,1837-1841,Democrat,q,imgsrc
+9,William Henry Harrison,1841-1841,Whig,q,imgsrc
+10,John Tyler,1841-1845,Whig,q,imgsrc
+11,James Knox Polk,1845-1849,Democrat,q,imgsrc
+12,Zachary Taylor,1849-1850,Whig,q,imgsrc
+13,Millard Fillmore,1850-1853,Whig,q,imgsrc
+14,Franklin Pierce,1853-1857,Democrat,q,imgsrc
+15,James Buchanan,1857-1861,Democrat,q,imgsrc
+16,Abraham Lincoln,1861-1865,Republican,q,imgsrc
+17,Andrew Johnson,1865-1869,Democrat,q,imgsrc
+18,Ulysses Simpson Grant,1869-1877,Republican,q,imgsrc
+19,Rutherford Birchard Hayes,1877-1881,Republican,q,imgsrc
+20,James Abram Garfield,1881-1881,Republican,q,imgsrc
+21,Chester Alan Arthur,1881-1885,Republican,q,imgsrc
+22,Grover Cleveland,1885-1889,Democrat,q,imgsrc
+23,Benjamin Harrison,1889-1893,Republican,q,imgsrc
+24,Grover Cleveland,1893-1897,Democrat,q,imgsrc
+25,William McKinley,1897-1901,Republican,q,imgsrc
+26,Theodore Roosevelt,1901-1909,Republican,q,imgsrc
+27,William Howard Taft,1909-1913,Republican,q,imgsrc
+28,Woodrow Wilson,1913-1921,Democrat,q,imgsrc
+29,Warren Gamaliel Harding,1921-1923,Republican,q,imgsrc
+30,Calvin Coolidge,1923-1929,Republican,q,imgsrc
+31,Herbert Clark Hoover,1929-1933,Republican,q,imgsrc
+32,Franklin Delano Roosevelt,1933-1945,Democrat,q,imgsrc
+33,Harry S Truman,1945-1953,Democrat,q,imgsrc
+34,Dwight David Eisenhower,1953-1961,Republican,q,imgsrc
+35,John Fitzgerald Kennedy,1961-1963,Democrat,q,imgsrc
+36,Lyndon Baines Johnson,1963-1969,Democrat,q,imgsrc
+37,Richard Milhous Nixon,1969-1974,Republican,q,imgsrc
+38,Gerald Rudolph Ford,1974-1977,Republican,q,imgsrc
+39,James Earl Carter,1977-1981,Democrat,q,imgsrc
+40,Ronald Wilson Reagan,1981-1989,Republican,q,imgsrc
+41,George Herbert-Walker Bush,1989-1993,Republican,q,imgsrc
+42,William Jefferson Clinton,1993-2001,Democrat,q,imgsrc
+43,George Walker Bush,2001-2009,Republican,q,imgsrc
+44,Barack Hussein Obama,2009-2016,Democrat,q,imgsrc
+45,Donald Trump,2016-Present,Republican,Owns $23.8M in Bitcoin,imgsrc

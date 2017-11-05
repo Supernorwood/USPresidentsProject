@@ -30,6 +30,7 @@
 					<c:choose>
 						<c:when test="${president.name != null}">
 							<ul>
+								<li><img src="#">Placeholder for images</li>
 								<li>Name: ${president.name}</li>
 								<li>Party: ${president.party}</li>
 								<li>Term: ${president.termNumber}</li>
@@ -52,7 +53,6 @@
 											<input type="submit" name="termNumber" value="${president.termNumber + 1}" disabled>
 										</c:when>
 										<c:otherwise> <!-- otherwise enable it -->
-										
 											<input type="submit" name="termNumber" value="${president.termNumber + 1}">
 										</c:otherwise>
 									</c:choose>
@@ -62,7 +62,6 @@
 						</c:when>
 						<c:otherwise>
 							Please select a president.
-							
 						</c:otherwise>
 						
 					
