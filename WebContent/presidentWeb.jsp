@@ -18,7 +18,8 @@
 				<input type="submit" value="Submit" />
 				
 	</form>
-		
+
+	${name}  ${party} ${term} ${fact}
 	
 		
 	<table border="0">
