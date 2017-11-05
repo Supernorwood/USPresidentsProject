@@ -8,18 +8,47 @@
 		<title>Filtered List of Presidents</title>
 	</head>
 	<body>
-		<c:forEach var="president" items="${filteredList}">
-			<ul>
-				<li><img src="${president.imageFile}"></li>
-				<li>Name: ${president.name}</li>
-				<li>Party: ${president.party}</li>
-				<li>Term: ${president.termNumber}</li>
-				<li>Dates: ${president.datesInOffice}</li>
-				<li>Fact: ${president.interestingFact}</li>
-			</ul>
-		</c:forEach>
+	
+	
+		<form action="select.do" method="POST">
+			Placeholder for number selection
+		
+		</form>
+	
+		<form action="select.do" method="GET">
+			<select name="filter">
+				<option value="Democrat">Democrat</option>
+				<option value="Democratic-Republican">Democratic-Republican</option>
+				<option value="Federalist">Federalist</option>
+				<option value="Independent">Independent</option>
+				<option value="Republican">Republican</option>
+				<option value="Whig">Whig</option>
+			</select>
+			<input type="Submit">
+		</form>
+		
+		<c:choose>
+			<c:when test="${not empty filteredList}">
+				<c:forEach var="president" items="${filteredList}">
+					<ul>
+						<li><img src="${president.imageFile}"></li>
+						<li>Name: ${president.name}</li>
+						<li>Party: ${president.party}</li>
+						<li>Term: ${president.termNumber}</li>
+						<li>Dates: ${president.datesInOffice}</li>
+						<li>Fact: ${president.interestingFact}</li>
+					</ul>
+					<hr>
+				</c:forEach>
+			</c:when>
+			<c:when test="${president != null}">
+				<h1>Placeholder for carousel display!</h1>
+			</c:when>
+			<c:otherwise>
+				<h1>Please select a president to the right.</h1>
+			</c:otherwise>
 		
 		
-		
+		</c:choose>
 	</body>
 </html>
