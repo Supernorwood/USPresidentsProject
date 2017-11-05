@@ -11,31 +11,11 @@
 
 
 
-	<h2>Welcome to President Info</h2>
-	
-	<form action="select.do" method="POST">
-				<input type="text" name="termNumber" /><br>
-				<input type="submit" value="Submit" />
-				
-	</form>
-	
-	${name}  ${party} ${term} ${fact}
+	<h2>You done fucked up son!</h2>
+	<h2><a href="presidentWeb.jsp">How about we try to wrangle that again?</a></h2>
 	
 		
-	<table border="0">
-		<tr>
-			<th>Term Number</th>
-			<th>President Name</th>
-	
-		</tr>
-		<tr>
-			<td>${presidents.termNumber}</td>
-			<td>${presidents.name}</td>
-			
-			
-		</tr>
-	</table>
-		
+
 		
 		
 		

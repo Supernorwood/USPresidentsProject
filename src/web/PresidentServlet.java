@@ -46,7 +46,15 @@ public class PresidentServlet extends HttpServlet {
 			termNumber = 1;
 		}
 		
-		President president = presidentDAO.getPresidentByTerm(termNumber);
+		President president;
+		//error checking for wrong number
+		if(termNumber>0&&termNumber<46) {
+			president = presidentDAO.getPresidentByTerm(termNumber);
+		}else {
+			president = null;
+		}
+		
+		
 		
 		if(president != null) {
 			request.setAttribute("president", president);
@@ -57,7 +65,7 @@ public class PresidentServlet extends HttpServlet {
 			
 			request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		} else {
-			request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
+			request.getRequestDispatcher("/error.jsp").forward(request, response);
 		}
 	}
 
