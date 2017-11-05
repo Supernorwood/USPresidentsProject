@@ -16,8 +16,8 @@
 16,Abraham Lincoln,1861-1865,Republican,Could see into the future,16.jpg
 17,Andrew Johnson,1865-1869,Democrat,Often apologized with flowers and candy,17.jpg
 18,Ulysses Simpson Grant,1869-1877,Republican,Died broke but happy,18.jpg
-19,Rutherford Birchard Hayes,1877-1881,Republican,q,19.jpg
-20,James Abram Garfield,1881-1881,Republican,q,20.jpg
+19,Rutherford Birchard Hayes,1877-1881,Republican,Could president like a boss,19.jpg
+20,James Abram Garfield,1881-1881,Republican,Drove his family crazy when practicing bag pipes,20.jpg
 21,Chester Alan Arthur,1881-1885,Republican,Could be found in the club gettin' tipsy on Fridays,21.jpg
 22,Grover Cleveland,1885-1889,Democrat,Wore lifts in his shoes,22.jpg
 23,Benjamin Harrison,1889-1893,Republican,Had a dragon tattoo,23.jpg
@@ -25,15 +25,15 @@
 25,William McKinley,1897-1901,Republican,Never learned to ride his bike without training wheels,25.jpg
 26,Theodore Roosevelt,1901-1909,Republican,Favorite food was fava beans,26.jpg
 27,William Howard Taft,1909-1913,Republican,Also authored several short stories about princesses,27.jpg
-28,Woodrow Wilson,1913-1921,Democrat,q,28.jpg
+28,Woodrow Wilson,1913-1921,Democrat,Despised dogs,28.jpg
 29,Warren Gamaliel Harding,1921-1923,Republican,Honey never spoils.,29.jpg
 30,Calvin Coolidge,1923-1929,Republican,Avocados are poisonous to birds.,30.jpg
-31,Herbert Clark Hoover,1929-1933,Republican,q,31.jpg
-32,Franklin Delano Roosevelt,1933-1945,Democrat,q,32.jpg
-33,Harry S Truman,1945-1953,Democrat,q,33.jpg
-34,Dwight David Eisenhower,1953-1961,Republican,q,34.jpg
-35,John Fitzgerald Kennedy,1961-1963,Democrat,q,35.jpg
-36,Lyndon Baines Johnson,1963-1969,Democrat,q,36.jpg
+31,Herbert Clark Hoover,1929-1933,Republican,Was indecisive AF,31.jpg
+32,Franklin Delano Roosevelt,1933-1945,Democrat,Just wanted to have fun,32.jpg
+33,Harry S Truman,1945-1953,Democrat,Invented awkward family photos,33.jpg
+34,Dwight David Eisenhower,1953-1961,Republican,Suffered from smelly pits,34.jpg
+35,John Fitzgerald Kennedy,1961-1963,Democrat,The type of guy who would've owned a segue,35.jpg
+36,Lyndon Baines Johnson,1963-1969,Democrat,Bane County pie-eating champion three years in a row,36.jpg
 37,Richard Milhous Nixon,1969-1974,Republican,Visited Vietnam 23 times during presidency,37.jpg
 38,Gerald Rudolph Ford,1974-1977,Republican,10% of the World’s population is left handed.,38.jpg
 39,James Earl Carter,1977-1981,Democrat,You cannot snore and dream at the same time.,39.jpg
