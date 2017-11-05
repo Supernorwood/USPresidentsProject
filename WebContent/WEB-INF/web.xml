@@ -18,12 +18,4 @@
     <servlet-name>PresidentServlet</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name>ListServlet</servlet-name>
-    <servlet-class>web.ListServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ListServlet</servlet-name>
-    <url-pattern>list.do</url-pattern>
-  </servlet-mapping>
 </web-app>
