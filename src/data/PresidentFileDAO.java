@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import javax.servlet.ServletContext;
-
-
 public class PresidentFileDAO implements PresidentDAO {
 	private static final String filename = "WEB-INF/presidentList.txt";
 	private ServletContext servletContext;

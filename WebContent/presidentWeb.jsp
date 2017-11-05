@@ -14,8 +14,8 @@
 
 	<h2>Welcome to President Info</h2>
 		
-	<form action="select.do" method="POST">
-				<input type="number" name="${termNumber}" value="${president.termNumber}"/><br>
+	<form action="TermNumber" method="POST">
+				<input type="number" name="${termNumber}" /><br> <!-- value="${president.termNumber}" -->
 				<input type="submit" value="Submit" />
 				
 	</form>
