@@ -36,7 +36,35 @@
 								<li>Dates: ${president.datesInOffice}</li>
 								<li>Fact: ${president.interestingFact}</li>
 							</ul>
+							<form action="select.do" method="POST">
+								<table> <!-- logic to display buttons and disable invalid options -->
+									<c:choose>
+										<c:when test="${president.termNumber == 1}"> <!-- when at first president, disable previous button -->
+											<input type="submit" name="termNumber" value="${president.termNumber - 1}" disabled>
+										</c:when>
+										<c:otherwise> <!-- otherwise enable it-->
+											<input type="submit" name="termNumber" value="${president.termNumber - 1}">
+										</c:otherwise>
+									</c:choose>
+									
+									<c:choose>
+										<c:when test="${president.termNumber == 45}"> <!-- when at last president, disable next button -->
+											<input type="submit" name="termNumber" value="${president.termNumber + 1}" disabled>
+										</c:when>
+										<c:otherwise> <!-- otherwise enable it -->
+										
+											<input type="submit" name="termNumber" value="${president.termNumber + 1}">
+										</c:otherwise>
+									</c:choose>
+								
+								</table>
+							</form>							
 						</c:when>
+						<c:otherwise>
+							Please select a president.
+							
+						</c:otherwise>
+						
 					
 					
 					
