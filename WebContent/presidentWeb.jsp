@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-5">
+			<div class="col">
 				<h2>Welcome to President Info</h2>
 
 				<form action="select.do" method="POST">
@@ -40,13 +40,7 @@
 						<div class="item active">
 
 							<img src="${president.imageFile}" alt="photo of president">
-							<ul>
-								<li>Name: ${president.name}</li>
-								<li>Party: ${president.party}</li>
-								<li>Term: ${president.termNumber}</li>
-								<li>Dates: ${president.datesInOffice}</li>
-								<li>Fact: ${president.interestingFact}</li>
-							</ul>
+						
 						</div>
 
 						<!--  <div class="item">
@@ -113,17 +107,17 @@
 
 
 			</div>
-			<div class="col-7">
+			<div class="col">
 				<c:choose>
 					<c:when test="${president.name != null}">
-						<!-- <ul> -->
+						 <ul> 
 						<%-- 	<li><img src="${president.imageFile}"></li> --%>
-						<%-- 			<li>Name: ${president.name}</li>
+									<li>Name: ${president.name}</li>
 								<li>Party: ${president.party}</li>
 								<li>Term: ${president.termNumber}</li>
 								<li>Dates: ${president.datesInOffice}</li>
 								<li>Fact: ${president.interestingFact}</li>
-							</ul> --%>
+							</ul> 
 						<%-- <form action="select.do" method="POST">
 								<table> <!-- logic to display buttons and disable invalid options -->
 									<c:choose>
