@@ -28,41 +28,20 @@
 				</div>
 				<div class="col-7">
 					<c:choose>
-						<c:when test="${name != null}">
+						<c:when test="${president.name != null}">
 							<ul>
-								<li>Name: ${name}</li>
-								<li>Party: ${party}</li>
-								<li>Term: ${term}</li>
-								<li>Dates: ${dates}</li>
-								<li>Fact: ${fact}</li>
-								
-							
+								<li>Name: ${president.name}</li>
+								<li>Party: ${president.party}</li>
+								<li>Term: ${president.termNumber}</li>
+								<li>Dates: ${president.datesInOffice}</li>
+								<li>Fact: ${president.interestingFact}</li>
 							</ul>
-						
 						</c:when>
 					
 					
 					
 					
 					</c:choose>
-					${name}  ${party} ${term} ${fact}
-					
-						
-					<table border="0">
-						<tr>
-							<th>Term Number</th>
-							<th>President Name</th>
-					
-						</tr>
-						<tr>
-							<td>${presidents.termNumber}</td>
-							<td>${presidents.name}</td>
-							
-							
-						</tr>
-					</table>
-						
-						
 				</div>
 			</div>
 		</div>

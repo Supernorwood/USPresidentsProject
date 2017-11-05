@@ -56,10 +56,6 @@ public class PresidentServlet extends HttpServlet {
 		
 		if(president != null) {
 			request.setAttribute("president", president);
-			request.setAttribute("name", president.getName());
-			request.setAttribute("fact", president.getInterestingFact());
-			request.setAttribute("term", president.getTermNumber());
-			request.setAttribute("party", president.getParty());
 			
 			request.getRequestDispatcher("/presidentWeb.jsp").forward(request, response);
 		} else {
