@@ -14,14 +14,16 @@ body {
 }
 
 ul {
+	background-color:rgba(255, 255, 255, 0.6);;
 	align-content: right;
-	text-shadow: 0 0 2px #000;
-	-moz-text-shadow: 0 0 2px #000;
-	-webkit-text-shadow: 0 0 2px #000;
-	color: white;
+	/* text-shadow: 0 0 2px #000; */
+	font-family: "Times New Roman", Times, serif;
+	/* -moz-text-shadow: 0 0 2px #000;
+	-webkit-text-shadow: 0 0 2px #000;*/
+	color: black;
 	font-size: 20px;
-	text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em
-		black;
+	/* text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em
+		black; */
 	list-style-type: none;
 }
 
