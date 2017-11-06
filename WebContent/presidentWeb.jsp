@@ -21,10 +21,14 @@
 				<div class="formCol">
 				<br>
 				<h2>Welcome to President Info</h2>
+				
+				Select a president by term number: <br>
 				<form action="select.do" method="POST">
-					<input type="text" name="termNumber" /><br> <input type="submit" value="Submit" />
+					<input type="text" name="termNumber" /><br> 
+					<input type="submit" value="Submit" />
 
-				</form>
+				</form> <br>
+				Display a list of presidents filtered by political party: <br>
 				<form action="select.do" method="GET">
 					<select name="filter">
 						<option value="Democrat">Democrat</option>
@@ -33,7 +37,8 @@
 						<option value="Independent">Independent</option>
 						<option value="Republican">Republican</option>
 						<option value="Whig">Whig</option>
-					</select> <input type="Submit">
+					</select> <br>
+					<input type="Submit">
 				</form>
 				<br>
 				</div>
