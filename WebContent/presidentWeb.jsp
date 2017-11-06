@@ -39,8 +39,8 @@
 				<c:choose>
 					<c:when test="${not empty filteredList}">
 						<c:forEach var="president" items="${filteredList}">
+							<img src="${president.imageFile}">
 							<ul>
-								<li><img src="${president.imageFile}"></li>
 								<li>Name: ${president.name}</li>
 								<li>Party: ${president.party}</li>
 								<li>Term: ${president.termNumber}</li>
