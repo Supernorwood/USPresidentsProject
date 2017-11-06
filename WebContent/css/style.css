@@ -23,4 +23,12 @@ ul {
 	text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em
 		black;
 }
+
+.image {
+	display: block;
+	margin: auto;	
+}
+
+.columnOverride {
+	horizontal-align: center;
 }

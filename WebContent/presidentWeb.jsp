@@ -60,10 +60,7 @@
 
 								<div class="item active">
 
-									<img src="${president.imageFile}" alt="photo of president">
-
-								</div>
-							</div>
+									<img class="image" src="${president.imageFile}" alt="photo of president">
 							<form action="select.do" method="POST">
 								<c:choose>
 									<c:when test="${president.termNumber == 1}">
@@ -94,14 +91,17 @@
 									</c:otherwise>
 								</c:choose>
 							</form>
-							<ul>
-								<li>Name: ${president.name}</li>
-								<li>Party: ${president.party}</li>
-								<li>Term: ${president.termNumber}</li>
-								<li>Dates: ${president.datesInOffice}</li>
-								<li>Fact: ${president.interestingFact}</li>
-							</ul>
+
+								</div>
+							</div>
 						</div>
+						<ul class="centerOverride">
+							<li>Name: ${president.name}</li>
+							<li>Party: ${president.party}</li>
+							<li>Term: ${president.termNumber}</li>
+							<li>Dates: ${president.datesInOffice}</li>
+							<li>Fact: ${president.interestingFact}</li>
+						</ul>
 					</c:when>
 					<c:otherwise>
 						<h1>Please select a president to the right.</h1>
