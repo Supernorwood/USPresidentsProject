@@ -17,6 +17,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
+			<br>
+				<div class="formCol">
+				<br>
 				<h2>Welcome to President Info</h2>
 				<form action="select.do" method="POST">
 					<input type="text" name="termNumber" /><br> <input type="submit" value="Submit" />
@@ -32,6 +35,8 @@
 						<option value="Whig">Whig</option>
 					</select> <input type="Submit">
 				</form>
+				<br>
+				</div>
 			</div>
 
 
