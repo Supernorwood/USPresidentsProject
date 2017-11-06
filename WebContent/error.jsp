@@ -11,7 +11,7 @@
 
 
 
-	<h2>You done fucked up son!</h2>
+	<h2>You done messed up son!</h2>
 	<h2><a href="presidentWeb.jsp">How about we try to wrangle that again?</a></h2>
 	
 		
