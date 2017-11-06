@@ -14,10 +14,11 @@
 <title>President</title>
 </head>
 <body>
-	<div class="container">
+
+	<div class="container stuff">
 		<div class="row">
 			<div class="col">
-			<br>
+			<br><br><br><br><br>
 				<div class="formCol">
 				<br>
 				<h2>Welcome to President Info</h2>
@@ -49,7 +50,7 @@
 				<c:choose>
 					<c:when test="${not empty filteredList}">
 						<c:forEach var="president" items="${filteredList}">
-							<img src="${president.imageFile}">
+							<img src="${president.imageFile}" class="image">
 							<ul>
 								<li>Name: ${president.name}</li>
 								<li>Party: ${president.party}</li>
